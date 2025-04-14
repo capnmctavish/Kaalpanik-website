@@ -1,12 +1,28 @@
 import React from "react";
-import Header from "../../components/header"
-import { Box, Button, Card, styled } from "@mui/material";
-import Grid from '@mui/material/Grid2';
+import { styled } from "@mui/material";
+import CustomSlider from "../../components/Slider";
+import OurCapabilities from "../../components/OurCapabilities";
+import CompanyInfo from "../../components/CompanyInfo";
 
-const HomeWrapper = styled("div")(() => ({
+const HomeWrapper = styled("div")(({theme}) => ({
+  // "&": {
+  //   marginTop: "40px",
+  //   backgroundColor: "#000",
+  //   color: "#fff"
+  // },
   "& .section1": {
     textAlign: "center",
-    height: "68vh"
+    // minHeight: "85vh",
+    // position: "relative",
+    // transform: "translate(0, 35%)",
+    [theme.breakpoints.up("sm")]: {
+      marginBottom: "3rem",
+      marginTop: "145px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "90px",
+      marginBottom: "2rem",
+    },
   },
   "& .innerWrapper": {
     position: "relative",
@@ -17,20 +33,23 @@ const HomeWrapper = styled("div")(() => ({
   "& .innerWrapper h1": {
       fontSize: "60px"
   },
-   "& .section2": {
-    margin: "40px",
-   },
-  "& .section2 .MuiCard-root": {
-    margin: "20px",
-    height: "350px",
-    // width: "200px",
+  "& .section2": {
+    [theme.breakpoints.up("sm")]: {
+      margin: "3rem 0",
+    },
+  },
+  "& .section2 .MuiCard-root.even h3": {
+    borderBottom: "1px solid #fff",
   },
   "& .section3": {
     textAlign: "center",
-    height: "62vh",
+    height: "60vh",
     padding: "0 40px",
-    width: "740px",
-    margin: "10px auto",
+    [theme.breakpoints.up("sm")]: {
+      margin: "3rem 0",
+    },
+    // width: "740px",
+    // margin: "10px auto",
   },
   "& .section3 .heading": {
     fontSize: "82px",
@@ -39,58 +58,70 @@ const HomeWrapper = styled("div")(() => ({
   "& .section3 p": {
     fontSize: "28px",
     marginTop: "5px"
-  }
+  },
+  ".section4": {
+    [theme.breakpoints.up("sm")]: {
+      margin: "3rem 0",
+    },
+    // height: '55vh',
+    // lineHeight: 10
+  },
+  ".section5": {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '400px',
+    [theme.breakpoints.up("sm")]: {
+      margin: "3rem 0",
+    },
+    [theme.breakpoints.down("sm")]: {
+      padding: "0 20px",
+    },
+  },
+  ".section5 h2": {
+    display: 'block',
+  },
+  ".list-unstyled" : { 
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "1.25rem",
+      lineHeight: "3",
+    },
+  },
+  ".list-unstyled li" : { 
+    [theme.breakpoints.down("sm")]: {
+      marginBottom: "10px",
+    },
+  },
 }));
 
 const Home = () => {
   return (
-    <div>
-      <Header/>
+    <div className="container">
       <HomeWrapper>
         <div className="section1">
-          <div className="innerWrapper">
-            <h1>Generative AI</h1>
-          </div>
+          <CustomSlider />
         </div>
         <div className="section2">
-          <Grid container spacing={1}>
-          <Grid size={3}>
-          {/* <Box sx={{ minWidth: 175 }}> */}
-            <Card variant="outlined"></Card>
-          {/* </Box> */}
-          </Grid>
-          <Grid size={3}>
-          <Card variant="outlined"></Card>
-          </Grid>
-          <Grid size={3}>
-          <Card variant="outlined"></Card>
-          </Grid>
-          <Grid size={3}>
-          <Card variant="outlined"></Card>
-          </Grid>
-
-          <Grid size={3}>
-          {/* <Box sx={{ minWidth: 175 }}> */}
-            <Card variant="outlined"></Card>
-          {/* </Box> */}
-          </Grid>
-          <Grid size={3}>
-          <Card variant="outlined"></Card>
-          </Grid>
-          <Grid size={3}>
-          <Card variant="outlined"></Card>
-          </Grid>
-          <Grid size={3}>
-          <Card variant="outlined"></Card>
-          </Grid>
-          </Grid>
+          <CompanyInfo />
         </div>
-        <div className="section3">
-          <div className="innerWrapper">
-            <span className="heading">360° VALUE</span>
-            <p>Every day, we embrace change and create value for all our stakeholders, in every part of the world.</p>
-          </div>
+        <div className="section4">
+          <br/>
+          <OurCapabilities />
         </div>
+        <div className="section5">
+          <h2 className="mb-4">Why Partner With Us?</h2>
+          <ul className="list-unstyled">
+            <li>✔ Global Expertise, Local Insights – We combine international innovation with deep industry knowledge.</li>
+            <li>✔ People-First Approach – Technology is a tool; empowering people is our priority.</li>
+            <li>✔ Sustainable & Responsible Innovation – Creating value that benefits businesses, people, and the planet.</li>
+          </ul>
+        </div>
+        {/* <div className="section6 mt-5">
+          <h2 className="fw-bold">Let’s Shape the Future Together</h2>
+          <p className="lead text-muted">Unlock new possibilities, drive innovation, and redefine what’s next.</p>
+          <a href="#contact" className="btn btn-primary btn-lg px-4 py-2">Connect With Us Today</a>
+        </div> */}
       </HomeWrapper>
     </div>
   )

@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.bg-dark {
+  background: linear-gradient(to right, #1c1c1c, #0a0a0a);
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+img {
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: scale(1.1);
+}

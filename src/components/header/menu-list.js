@@ -1,62 +1,64 @@
+import { Link } from "react-router-dom";
+
 export const capabilitiesMenu = [
-  'Cloud',
-  'Cybersecurity',
-  'Data and Artificial Intelligence',
-  'Digital Engineering and Manufacturing',
-  'Emerging Technology',
-  'Ecosystem Partners',
-  'Finance and Risk Management',
-  'Infrastructure and Capital Projects',
-  'Learning',
-  'Marketing and Experience',
-  'Metaverse',
-  'Sales and Commerce',
-  'Strategic Managed Services',
-  'Strategy',
-  'Supply Chain',
-  'Sustainability',
-  'Talent and Organization',
-  'Technology Transformation'
+  <Link to='/cloud'>Cloud</Link>,
+  <Link to=''>Cybersecurity</Link>,
+  <Link to=''>Data and Artificial Intelligence</Link>,
+  <Link to=''>Digital Engineering and Manufacturing</Link>,
+  <Link to=''>Emerging Technology</Link>,
+  <Link to=''>Ecosystem Partners</Link>,
+  <Link to=''>Finance and Risk Management</Link>,
+  <Link to=''>Infrastructure and Capital Projects</Link>,
+  <Link to=''>Learning</Link>,
+  <Link to=''>Marketing and Experience</Link>,
+  <Link to=''>Metaverse</Link>,
+  <Link to=''>Sales and Commerce</Link>,
+  <Link to=''>Strategic Managed Services</Link>,
+  <Link to=''>Strategy</Link>,
+  <Link to=''>Supply Chain</Link>,
+  <Link to=''>Sustainability</Link>,
+  <Link to=''>Talent and Organization</Link>,
+  <Link to=''>Technology Transformation</Link>,
 ];
 
 export const industriesMenu = [
-  'Aerospace and Defense',
-  'Automotive',
-  'Banking',
-  'Capital Markets',
-  'Chemicals',
-  'Communications and Media',
-  'Consumer Goods and Services',
-  'Energy',
-  'Health',
-  'High Tech',
-  'Industrial',
-  'Insurance',
-  'Life Sciences',
-  'Natural Resources',
-  'Public Service',
-  'Private Equity',
-  'Retail',
-  'Software and Platforms',
-  'Travel',
-  'Utilities'
+<Link to=''>Aerospace and Defense</Link>,
+<Link to=''>Automotive</Link>,
+<Link to=''>Banking</Link>,
+<Link to=''>Capital Markets</Link>,
+<Link to=''>Chemicals</Link>,
+<Link to=''>Communications and Media</Link>,
+<Link to=''>Consumer Goods and Services</Link>,
+<Link to=''>Energy</Link>,
+<Link to=''>Health</Link>,
+<Link to=''>High Tech</Link>,
+<Link to=''>Industrial</Link>,
+<Link to=''>Insurance</Link>,
+<Link to=''>Life Sciences</Link>,
+<Link to=''>Natural Resources</Link>,
+<Link to=''>Public Service</Link>,
+<Link to=''>Private Equity</Link>,
+<Link to=''>Retail</Link>,
+<Link to=''>Software and Platforms</Link>,
+<Link to=''>Travel</Link>,
+<Link to=''>Utilities</Link>,
 ];
 
 export const ourOrganizationMenu = [
-  'Leaders',
-  'Locations',
-  '360° Value Report'
+<Link to=''>Leaders</Link>,
+<Link to=''>Locations</Link>,
+<Link to=''>360° Value Report</Link>,
 ];
 
 export const howWeServeMenu = [
-  'Strategy and Consulting',
-  'Technology',
-  'Operations'
+<Link to=''>Strategy and Consulting</Link>,
+<Link to=''>Technology</Link>,
+<Link to=''>Operations</Link>,
 ];
 
 export const lifeAtKaalpanik = [
-  'Working here',
-  'Benefits',
-  'Our communities',
-  'Work environment'
+<Link to=''>Working here</Link>,
+<Link to=''>Benefits</Link>,
+<Link to=''>Our communities</Link>,
+<Link to=''>Work environment</Link>
 ];
