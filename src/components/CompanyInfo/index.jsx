@@ -24,12 +24,12 @@ const InfoWrapper = styled("div")(({theme}) => ({
   },
   "& .MuiCard-root h3": {
     [theme.breakpoints.down("sm")]: {
-      fontSize: "18px",
+      fontSize: "20px",
     },
   },
   "& .MuiCard-root h4": {
     [theme.breakpoints.down("sm")]: {
-      fontSize: "16px",
+      fontSize: "18px",
     },
   },
   ".MuiCard-root.odd": {

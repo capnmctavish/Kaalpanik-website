@@ -91,6 +91,7 @@ const HomeWrapper = styled("div")(({theme}) => ({
   ".list-unstyled li" : { 
     [theme.breakpoints.down("sm")]: {
       marginBottom: "10px",
+      fontSize: "17px",
     },
   },
 }));

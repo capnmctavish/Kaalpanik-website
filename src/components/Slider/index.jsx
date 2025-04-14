@@ -104,8 +104,8 @@ const CustomSlider = () => {
             <Slider {...settings}>
               {slides.map((slide, index) => (
                 <div key={index}>
-                  <h3>{slide.title}</h3>
-                  <p>{slide.description}</p>
+                  <h3 className="mb_h3">{slide.title}</h3>
+                  <p className="lead">{slide.description}</p>
                   <button className="btn custom-btn">{slide.cta}</button>
                 </div>
               ))}

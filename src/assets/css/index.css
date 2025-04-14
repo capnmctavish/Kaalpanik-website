@@ -23,8 +23,17 @@
   .lead {
     font-size: 18px;
   }
+  .mb_h3 {
+    font-size: 22px;
+  }
 }
-
+.menuItem:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+.menuItem a {
+  color: #fff;
+  text-decoration: none;
+}
 .columnStyle {
   /* flex: 1; */
   color: #fff;

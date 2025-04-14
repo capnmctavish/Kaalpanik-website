@@ -277,17 +277,11 @@ const Header = () => {
                             {capabilitiesMenu.map((item, index) => (
                               <ListItem button key={index}
                               onClick={() => { resetMobileMenu(); toggleDrawer(); }}
-                                // sx={{
-                                //   color: '#fff', // This ensures the entire row has white text
-                                //   '&:hover': {
-                                //     backgroundColor: 'rgba(255,255,255,0.1)', // Optional hover effect
-                                //   },
-                                // }}
                               >
                                <ListItemText
                                 disableTypography
                                 primary={
-                                  <Typography sx={{ color: '#fff', textDecoration: 'none' }}>
+                                  <Typography className="menuItem">
                                     {item}
                                   </Typography>
                                 }
@@ -308,7 +302,7 @@ const Header = () => {
                                 <ListItemText 
                                   disableTypography
                                   primary={
-                                    <Typography sx={{ color: '#fff', textDecoration: 'none' }}>
+                                    <Typography className="menuItem">
                                       {item}
                                     </Typography>
                                   }
@@ -337,7 +331,7 @@ const Header = () => {
                                 <ListItemText 
                                   disableTypography
                                   primary={
-                                    <Typography sx={{ color: '#fff', textDecoration: 'none' }}>
+                                    <Typography className="menuItem">
                                       {item}
                                     </Typography>
                                   }
@@ -358,7 +352,7 @@ const Header = () => {
                                 <ListItemText 
                                   disableTypography
                                   primary={
-                                    <Typography sx={{ color: '#fff', textDecoration: 'none' }}>
+                                    <Typography className="menuItem">
                                       {item}
                                     </Typography>
                                   }
@@ -387,7 +381,7 @@ const Header = () => {
                                 <ListItemText 
                                   disableTypography
                                   primary={
-                                    <Typography sx={{ color: '#fff', textDecoration: 'none' }}>
+                                    <Typography className="menuItem">
                                       {item}
                                     </Typography>
                                   }

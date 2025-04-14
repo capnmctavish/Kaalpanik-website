@@ -40,9 +40,12 @@ const SliderWrapper = styled("div")(({theme}) => ({
     padding: "20px",
   },
   ".mb-capability p": {
-    fontSize: "20px",
+    fontSize: "22px",
     fontWeight: "bold",
     margin: "10px 0",
+  },
+  ".mb-capability span": {
+    fontSize: "17px",
   },
 }));
 
